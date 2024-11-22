@@ -17,5 +17,4 @@ visualInspectionZone: true
 
 to
 
-```swift
 visualInspectionZone: false
