@@ -23,7 +23,6 @@ class ViewController: UIViewController {
 
     @IBAction func scanButtonTapped(_ sender: Any) {
         let scanningVC = ScanningViewController()
-        print("navigationController: \(navigationController)")
         navigationController?.pushViewController(scanningVC, animated: true)
     }
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		397549C12CF0BF66007CC11D /* ScanditCaptureCore in Frameworks */ = {isa = PBXBuildFile; productRef = 397549C02CF0BF66007CC11D /* ScanditCaptureCore */; };
+		397549C32CF0BF66007CC11D /* ScanditIDC in Frameworks */ = {isa = PBXBuildFile; productRef = 397549C22CF0BF66007CC11D /* ScanditIDC */; };
+		397549C52CF0BF66007CC11D /* ScanditIdCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 397549C42CF0BF66007CC11D /* ScanditIdCapture */; };
+		397549C72CF0BF66007CC11D /* ScanditIdVoidedDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 397549C62CF0BF66007CC11D /* ScanditIdVoidedDetection */; };
+		397549C92CF0BF66007CC11D /* ScanditLabelCaptureText in Frameworks */ = {isa = PBXBuildFile; productRef = 397549C82CF0BF66007CC11D /* ScanditLabelCaptureText */; };
 		9C0AC5C12C7887FA00E409E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0AC5C02C7887FA00E409E9 /* AppDelegate.swift */; };
 		9C0AC5C32C7887FA00E409E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0AC5C22C7887FA00E409E9 /* SceneDelegate.swift */; };
 		9C0AC5C52C7887FA00E409E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0AC5C42C7887FA00E409E9 /* ViewController.swift */; };
@@ -37,6 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397549C32CF0BF66007CC11D /* ScanditIDC in Frameworks */,
+				397549C92CF0BF66007CC11D /* ScanditLabelCaptureText in Frameworks */,
+				397549C72CF0BF66007CC11D /* ScanditIdVoidedDetection in Frameworks */,
+				397549C12CF0BF66007CC11D /* ScanditCaptureCore in Frameworks */,
+				397549C52CF0BF66007CC11D /* ScanditIdCapture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,13 @@
 			dependencies = (
 			);
 			name = IdCaptureSurveySwift;
+			packageProductDependencies = (
+				397549C02CF0BF66007CC11D /* ScanditCaptureCore */,
+				397549C22CF0BF66007CC11D /* ScanditIDC */,
+				397549C42CF0BF66007CC11D /* ScanditIdCapture */,
+				397549C62CF0BF66007CC11D /* ScanditIdVoidedDetection */,
+				397549C82CF0BF66007CC11D /* ScanditLabelCaptureText */,
+			);
 			productName = IdCaptureSurveySwift;
 			productReference = 9C0AC5BD2C7887FA00E409E9 /* IdCaptureSurveySwift.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 9C0AC5B42C7887FA00E409E9;
+			packageReferences = (
+				397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */,
+			);
 			productRefGroup = 9C0AC5BE2C7887FA00E409E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,6 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 743J7T7VWB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IdCaptureSurveySwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 743J7T7VWB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IdCaptureSurveySwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -338,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +397,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Scandit/datacapture-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "7.0.0-beta.1";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		397549C02CF0BF66007CC11D /* ScanditCaptureCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */;
+			productName = ScanditCaptureCore;
+		};
+		397549C22CF0BF66007CC11D /* ScanditIDC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */;
+			productName = ScanditIDC;
+		};
+		397549C42CF0BF66007CC11D /* ScanditIdCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */;
+			productName = ScanditIdCapture;
+		};
+		397549C62CF0BF66007CC11D /* ScanditIdVoidedDetection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */;
+			productName = ScanditIdVoidedDetection;
+		};
+		397549C82CF0BF66007CC11D /* ScanditLabelCaptureText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 397549BF2CF0BF66007CC11D /* XCRemoteSwiftPackageReference "datacapture-spm" */;
+			productName = ScanditLabelCaptureText;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C0AC5B52C7887FA00E409E9 /* Project object */;
 }
