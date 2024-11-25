@@ -1,6 +1,6 @@
 # Important Note for MRZ and VIZ Implementation
 
-The implementation is primarily designed for **MRZ ID cards**, as mentioned in the documentation. However, the provided **samples** also include cards without **MRZ**, which require the **VIZ** (Visual Inspection Zone) scanner type.
+The implementation is primarily designed for **MRZ ID cards**, as mentioned in the task instructions document. However, the provided **samples** also include cards without **MRZ**, which require the **VIZ** (Visual Inspection Zone) scanner type.
 
 ## Testing Both MRZ and VIZ
 
