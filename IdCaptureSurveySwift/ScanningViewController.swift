@@ -86,10 +86,11 @@ class ScanningViewController: UIViewController {
     private func configureIdCaptureSettings() -> IdCaptureSettings {
         let settings = IdCaptureSettings()
         settings.acceptedDocuments = [IdCard(region: .euAndSchengen), Passport(region: .any)]
+        settings.rejectedDocuments = [Passport(region: .vietnam)]
         settings.scannerType = SingleSideScanner(
             enablingBarcode: false,
             machineReadableZone: true,
-            visualInspectionZone: true
+            visualInspectionZone: false
         )
         return settings
     }
@@ -105,7 +106,7 @@ class ScanningViewController: UIViewController {
     private func validateDocument(_ capturedId: CapturedId) -> Bool {
         guard let documentType = capturedId.document else { return false }
         
-        if (documentType.isPassport() && capturedId.issuingCountryISO != "VNM") || documentType.isIdCard() {
+        if documentType.isPassport() || documentType.isIdCard() {
             return true
         }
         
